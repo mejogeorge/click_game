@@ -1,5 +1,5 @@
 export interface GameState extends GameInitialState {
-    recordClicks: ({click, time} : GameClickProfile) => void
+    recordClicks: ({ click, time }: GameClickProfile) => void
 }
 
 export interface GameClickProfile {
@@ -12,4 +12,8 @@ export interface GameInitialState {
     clickProfile: GameClickProfile
 }
 
+export type game = {
+    loader: boolean
+    clickProfile: GameClickProfile
+}
 
